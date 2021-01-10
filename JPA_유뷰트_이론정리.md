@@ -272,3 +272,32 @@ Bean Factory
 
 필요한 객체를 Bean Factory에 등록할 수 도 있다. 여기에 등록하면 초기에 메모리에 로드되지 않고 필요할 때 getBean()이라는 메소드를 통하여 호출하여 메모리에 로드할 수 있다. 이것 또한 IoC이다. 그리고 필요할 때 DI하여 사용할 수 있다. ApplicationContext와 다른 점은 Bean Factory에 로드되는 객체들은 미리 로드되지 않고 필요할 때 호출하여 로드하기 때문에 lazy-loading이 된다는 점이다.
 ```
+___
+## UTF-8이란?
+컴퓨터는 1 or 0 -> 표현할 수 있는 수는 2의 3승
+
+2의 8승은 256가지 수
+알파벳(대문자, 소문자),숫자, 기호등을 표현하려면 2의 8승이 필요하다.  
+문자 1개의 표 = 아스키 코드  
+8bit -> 1
+byte  
+RAM은 한 구분에 1Byte를 담을 수 있다. 따라서 RAM은 하나의 문자를 담을 수 있다.
+하지만 우리나라 기준 한 글자는 2byte, 중국은 3byte가 필요하다.
+
+세계화가 된 이 시대에 byte를 통일하자! -> UTF-8(3byte)
+
+___
+## spring 의존성
+1. spring boot devtool 
+- 파일 변경시 바로 컴파일 해준다.
+2. Lombok
+- getter, setter등 자동생성 라이브러리
+3. spring data JPA
+- JPA를 이용하여 ORM을 사용할 예정
+4. Mysql driver
+- mysql 접속하기 위해 사용
+5. Spring security
+- 필터 등 여러가지 기능을 쉽게 구현 (추후 나중에 공부한다.)
+6. OAuth2 client
+- 카카오 로그인 같은 등 쉽게 구현할 수 있지만 이번에는 노가다로 구현해본다.
+7. 
